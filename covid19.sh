@@ -3,9 +3,9 @@
 discord="[Discord Webhook]"
 msg="Active Infected:"
 # Country?
-# Leave blank for global, use '/country/[country to track]' to set country tracking.
+# Leave a forward slash '/' for global, use '/country/[country to track]' to set country tracking.
 # If it does not work for your country, have a look at the table at https://www.worldometers.info/coronavirus/
-country=""
+country="/"
 # https://github.com/jakesta13
 ### ### ### ### ### ### ###
 # Set last to 0 if you want it to send the initial update, otherwise leave it blank.
