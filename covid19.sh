@@ -16,7 +16,7 @@ while true; do
 		echo "First Run, Don't send, ${count}"
 		last="${count}"
 	else
-		if [ "${count}" != "${last}" ]; then
+		if [ "${count}" != "${last}" ] && [ ! -z "${count}" ]; then
 			dif=$(echo "${count} ${last}")
 			dif=$(echo "${dif}" | sed 's/,//g' | awk '{print $1 - $2}')
 			echo "${msg} ${count}. Change: ${dif}"
